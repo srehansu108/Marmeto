@@ -93,12 +93,11 @@
 .container {
   background-color: #F9F1E7;
   padding: 2rem;
-  width: 25rem;
-  height: 27rem;
+  width: 25%;
+  height: 50%;
   text-align: center;
-  position: relative;
-  right: -20rem;
-  margin-right: 29rem;
+  position: absolute;
+  right: 5%;
 }
 
 .container button {
@@ -113,12 +112,12 @@
 
 /* Tabular Format for Product Table */
 table{
-  position: relative;
-  top: 1rem;
-  left: 7rem;
-  width: 50rem;
+  position: absolute;
+  top: 35rem;
+  width: 50%;
   text-align: center;
   border-collapse: collapse;
+  right: 40%;
 }
 table th{
   padding: 0.7rem 1.2rem;
@@ -215,9 +214,9 @@ table input{
     text-align: center;
     margin: 1rem 0;
     position: absolute;
-    right: 3rem;
+    right: 12%;
     top: 68rem;
-    width: 40rem;
+    width: 70%;
   }
   .container h1{
     font-size: 3.2rem;
@@ -291,13 +290,11 @@ table input{
   }
 
   .container {
-    position: relative;
-    height: 19rem;
-    left: 0.1rem;
-    width: 14rem;
-    max-width: 100%;
-    margin: 6rem auto;
-    top: -3rem;
+    position: absolute;
+    height: 35%;
+    margin: 8rem -5%;
+    top: 100%;
+    margin-bottom: 40%;
   }
 
   .container button {
@@ -315,13 +312,13 @@ table input{
     margin: 1rem 0;
   }
   table{
-    position: relative;
-    top: 1rem;
-    left: 0rem;
-    width: 19rem;
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    width: 90%;
     text-align: left;
     border-collapse: collapse;
-    font-size: 0.5rem;
+    font-size: 70%;
   }
   table th{
     padding: 0.3rem 0.1rem;
@@ -336,7 +333,7 @@ table input{
     font-size: 8px;
   }
   table img {
-    height: 3.5rem;
+    height: 10vh;
     background-color: #F9F1E7;
     border-radius: 5px;
   }
