@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Coding Assessment L2 Boilerplate</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="Navbar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Logo">
+                <h1>Marmeto</h1>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div class="icons">
+                <img src="search.png" alt="Search Icon">
+                <img src="heart.png" alt="Heart Icon">
+                <img src="shopping-cart.png" alt="Shopping Cart Icon">
+            </div>
+        </div>
+        <div class="Home-cart">
+            <img src="Logo.png" alt="Logo" style="height: 7rem;">
+            <h1 style="font-size: 54px; margin-top: -1rem;">Cart</h1>
+            <h3>Home      ><span style="color: #656262; padding-left: 5px;">Cart</span></h3>
+        </div>
+        <img src="back.jpg" alt="Background Image" style="height: 25rem; width: 100%; opacity: 0.5; object-fit: cover; filter: blur(3px);">
+        <div class="section">
+            <div>
+                <table>
+                    <thead style="background-color: #F9F1E7;">
+                        <tr>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Sub-Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Dynamic Content Will Be Injected Here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <h1>Cart Totals</h1>
+                <h3 class="Subtotal">Subtotal<span>Rs 250000.00</span></h3>
+                <h3 class="Total">Total<span>Rs 250000.00</span></h3>
+                <button>Check Out</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div style="display: flex; text-align: left;">
+            <img src="trophy.png" alt="trophy" style="height:5rem">
+                <div>
+                    <h2>High Quality</h2>
+                    <h3 style="color: #898989;">Crafted from top material</h3>
+                </div>           
+            </div>
+            <div style="display: flex; text-align: left;">
+            <img src="warranty.png" alt="warranty" style="height:5rem">
+                <div>
+                    <h2>Warrenty Protection</h2>
+                    <h3 style="color: #898989;">Over 2 years</h3>
+                </div>
+            </div>
+            <div style="display: flex; text-align: left;">
+            <img src="delivery-in-hand.png" alt="delivery-in-hand" style="height:5rem">
+                <div>
+                    <h2>Free Shipping</h2>
+                    <h3 style="color: #898989;">Order over 150 $</h3>
+                </div>
+            </div>
+            <div style="display: flex; text-align: left;">
+            <img src="customer-care.png" alt="customer-care" style="height:5rem">
+                <div>
+                    <h2>24/7 Support</h2>
+                    <h3 style="color: #898989;">Dedicated Support</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
