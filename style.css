@@ -227,13 +227,12 @@ table input{
   /* Close Button */
   .close-btn {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.2rem;
+    right: 1.5rem;
   }
 
   .close-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
+    font-size: 1.2rem;
     color: #0000006f;
     display: block;
   }
@@ -257,7 +256,7 @@ table input{
 
   .Home-cart{
     position: absolute;
-    top: 15rem;
+    top: 12rem;
     left: 45%;
     text-align: center;
     opacity: 1;
@@ -335,7 +334,7 @@ table input{
 
   .Home-cart{
     position: absolute;
-    top: 15rem;
+    top: 12rem;
     left: 39%;
     text-align: center;
     opacity: 1;
