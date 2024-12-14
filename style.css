@@ -195,7 +195,7 @@ table input{
     top: 0;
     right: -1000px; /* Start off-screen */
     width: 30%;
-    height: 50%;
+    height: 25rem;
     background-color: #fff;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease-in-out;
