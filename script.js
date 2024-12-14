@@ -26,16 +26,15 @@ const fetchCartItems = async () => {
                 <td style="color:#9F9F9F;">Rs ${pricePerItem.toFixed(2)}</td>
                 <td>
                     <input 
-                        type="number" 
+                        type="text" 
                         value="1" 
                         id="quantity-input" 
                         min="1" 
-                        style="width: 50px; text-align: center;"
                     />
                 </td>
                 <td id="subtotal-cell">Rs ${pricePerItem.toFixed(2)}</td>
                 <td>
-                    <img src="delete.png" alt="Delete" class="delete-icon" style="cursor: pointer; width: 20px; height: 20px;">
+                    <img src="delete.png" alt="Delete" class="delete-icon">
                 </td>
             `;
             cartItemsContainer.appendChild(row);
