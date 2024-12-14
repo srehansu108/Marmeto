@@ -54,7 +54,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 8%;
   list-style: none;
   font-weight: bold;
 }
@@ -72,8 +72,10 @@
 
 .Navbar .icons {
   display: flex;
-  gap: 3rem;
-  margin-right: 3rem;
+  position: absolute;
+  right: 0%;
+  gap: 50%;
+  margin-right: 10%;
 }
 
 .Navbar .icons img {
@@ -192,7 +194,7 @@ table input{
     position: fixed;
     top: 0;
     right: -1000px; /* Start off-screen */
-    width: 50%;
+    width: 30%;
     height: 50%;
     background-color: #fff;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
@@ -219,10 +221,7 @@ table input{
     height: 4px;
     margin: 2px;
     background-color: #333;
-  }
-
-  .menu-toggle {
-    display: none;
+    border-radius: 5px;
   }
 
   /* Close Button */
@@ -244,8 +243,8 @@ table input{
   }
 
   .icons {
-    position: relative;
-    left:40%;
+    padding-right: 40%;
+    padding-top: 20rem;
   }
 
   .section {
@@ -346,7 +345,9 @@ table input{
   .section {
     height:40rem;
   }
-
+  .menu{
+    width:45%
+  }
   .container {
     position: absolute;
     height: 35%;
@@ -422,7 +423,7 @@ table input{
     font-size:24px;
   }
   .icons {
-    position: relative;
-    left:35%;
+    padding-right: 40%;
+    padding-top: 19rem;
   }
 }
