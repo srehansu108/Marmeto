@@ -34,12 +34,12 @@
   flex-wrap: wrap;
 }
 
-.logo-container {
+.Navbar .logo-container {
   display: flex;
   align-items: center;
 }
 
-.logo-container img {
+.Navbar .logo-container img {
   height: 4.5rem;
 }
 .Home-cart{
@@ -70,19 +70,19 @@
   transform: scale(1.1);
 }
 
-.icons {
+.Navbar .icons {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   margin-right: 3rem;
 }
 
-.icons img {
+.Navbar .icons img {
   height: 24px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.icons img:hover {
+.Navbar .icons img:hover {
   transform: scale(1.1);
 }
 .section{
@@ -164,30 +164,88 @@ table input{
 .footer p {
   margin: 0;
 }
-
+.close-icon{
+  display: none;
+}
+.menu-toggle{
+  display: none;
+}
 /* Mobile and Tablet Responsiveness */
 @media (max-width: 1024px) {
   /* Tablet Styles */
   .Navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
   }
 
   .Navbar ul {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
+    align-items: center;
     gap: 2rem;
   }
 
   .Navbar ul li {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -1000px; /* Start off-screen */
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .menu-toggle:checked + .hamburger + .menu {
+    right: 0; /* Slide in from the right */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+
+  .hamburger .bar {
+    width: 20px;
+    height: 4px;
+    margin: 2px;
+    background-color: #333;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0000006f;
+    display: block;
+  }
+
+  .close-icon:hover {
+    color: rgb(255, 0, 0); /* Optional: Add hover effect */
   }
 
   .icons {
-    justify-content: flex-start;
-    margin-top: 1rem;
+    position: relative;
+    left:40%;
   }
 
   .section {
@@ -200,8 +258,8 @@ table input{
 
   .Home-cart{
     position: absolute;
-    top: 27rem;
-    left: 44%;
+    top: 15rem;
+    left: 45%;
     text-align: center;
     opacity: 1;
     z-index: 10;
@@ -215,11 +273,11 @@ table input{
     margin: 1rem 0;
     position: absolute;
     right: 12%;
-    top: 68rem;
+    top: 55rem;
     width: 70%;
   }
   .container h1{
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .container button {
     width: 80%;
@@ -253,6 +311,12 @@ table input{
 
 @media (max-width: 768px) {
   /* Mobile Styles */
+  .logo-container img {
+    height: 3.5rem;
+  }
+  .logo-container h1{
+    font-size: 24px;
+  }
   .Navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -261,39 +325,33 @@ table input{
 
   .Navbar ul {
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
+    align-items: center;
     gap: 1.5rem;
   }
 
   .Navbar ul li {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
-  }
-
-  .icons {
-    justify-content: flex-start;
-    margin-top: 1rem;
   }
 
   .Home-cart{
     position: absolute;
-    top: 25rem;
-    left: 35%;
+    top: 15rem;
+    left: 39%;
     text-align: center;
     opacity: 1;
     z-index: 10;
   }
 
   .section {
-    height:30rem;
+    height:40rem;
   }
 
   .container {
     position: absolute;
     height: 35%;
     margin: 8rem -5%;
-    top: 100%;
+    top: 85%;
     margin-bottom: 40%;
   }
 
@@ -313,10 +371,10 @@ table input{
   }
   table{
     position: absolute;
-    top: 95%;
+    top: 75%;
     left: 5%;
     width: 90%;
-    text-align: left;
+    text-align: center;
     border-collapse: collapse;
     font-size: 70%;
   }
@@ -324,13 +382,13 @@ table input{
     padding: 0.3rem 0.1rem;
   }
   table input {
-    width: 0.7rem;
+    width: 1rem;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 0.2rem;
     height: 0.7rem;
-    font-size: 8px;
+    font-size: 10px;
   }
   table img {
     height: 10vh;
@@ -338,14 +396,16 @@ table input{
     border-radius: 5px;
   }
   .delete-icon{
-    height: 0.8rem;
+    height: 1rem;
     background-color: white;
   }
   .footer h3 {
     font-size: 0.9rem;
+    padding-left:5%;
   }
   .footer h2{
     font-size: 1.3rem;
+    padding-left:5%;
   }
   .Subtotal{
     margin-top: 2rem;
@@ -360,5 +420,9 @@ table input{
   }
   .Container h1{
     font-size:24px;
+  }
+  .icons {
+    position: relative;
+    left:35%;
   }
 }
